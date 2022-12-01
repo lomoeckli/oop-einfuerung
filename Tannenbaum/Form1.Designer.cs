@@ -94,6 +94,7 @@
             this.TreeDrawing.Name = "TreeDrawing";
             this.TreeDrawing.Size = new System.Drawing.Size(507, 538);
             this.TreeDrawing.TabIndex = 7;
+            this.TreeDrawing.Text = " ";
             // 
             // DrawTree
             // 

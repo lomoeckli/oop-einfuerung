@@ -32,9 +32,10 @@
             this.SelectHours = new System.Windows.Forms.RadioButton();
             this.label2 = new System.Windows.Forms.Label();
             this.Speed = new System.Windows.Forms.TextBox();
-            this.GetTime = new System.Windows.Forms.Button();
+            this.CalculateTravelDuration = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.OutputTravelTime = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -76,21 +77,21 @@
             this.Speed.Size = new System.Drawing.Size(137, 24);
             this.Speed.TabIndex = 4;
             // 
-            // GetTime
+            // CalculateTravelDuration
             // 
-            this.GetTime.BackColor = System.Drawing.SystemColors.Window;
-            this.GetTime.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDark;
-            this.GetTime.Location = new System.Drawing.Point(50, 158);
-            this.GetTime.Name = "GetTime";
-            this.GetTime.Size = new System.Drawing.Size(293, 31);
-            this.GetTime.TabIndex = 5;
-            this.GetTime.Text = "Calculate travel time";
-            this.GetTime.UseVisualStyleBackColor = false;
+            this.CalculateTravelDuration.BackColor = System.Drawing.SystemColors.Window;
+            this.CalculateTravelDuration.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDark;
+            this.CalculateTravelDuration.Location = new System.Drawing.Point(50, 158);
+            this.CalculateTravelDuration.Name = "CalculateTravelDuration";
+            this.CalculateTravelDuration.Size = new System.Drawing.Size(293, 31);
+            this.CalculateTravelDuration.TabIndex = 5;
+            this.CalculateTravelDuration.Text = "Calculate travel duration";
+            this.CalculateTravelDuration.UseVisualStyleBackColor = false;
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.Speed);
-            this.groupBox1.Controls.Add(this.GetTime);
+            this.groupBox1.Controls.Add(this.CalculateTravelDuration);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.SelectDays);
             this.groupBox1.Controls.Add(this.SelectHours);
@@ -112,12 +113,20 @@
             this.label1.TabIndex = 7;
             this.label1.Text = "Output travel time";
             // 
+            // OutputTravelTime
+            // 
+            this.OutputTravelTime.Location = new System.Drawing.Point(190, 246);
+            this.OutputTravelTime.Name = "OutputTravelTime";
+            this.OutputTravelTime.Size = new System.Drawing.Size(138, 22);
+            this.OutputTravelTime.TabIndex = 8;
+            // 
             // Feld
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.ClientSize = new System.Drawing.Size(451, 344);
+            this.ClientSize = new System.Drawing.Size(450, 298);
+            this.Controls.Add(this.OutputTravelTime);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox1);
             this.Name = "Feld";
@@ -135,9 +144,10 @@
         private System.Windows.Forms.RadioButton SelectHours;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox Speed;
-        private System.Windows.Forms.Button GetTime;
+        private System.Windows.Forms.Button CalculateTravelDuration;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox OutputTravelTime;
     }
 }
 
