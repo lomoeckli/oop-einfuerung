@@ -87,6 +87,7 @@
             this.CalculateTravelDuration.TabIndex = 5;
             this.CalculateTravelDuration.Text = "Calculate travel duration";
             this.CalculateTravelDuration.UseVisualStyleBackColor = false;
+            this.CalculateTravelDuration.Click += new System.EventHandler(this.CalculateTravelDuration_Click);
             // 
             // groupBox1
             // 
@@ -109,7 +110,7 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(28, 246);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(178, 25);
+            this.label1.Size = new System.Drawing.Size(142, 20);
             this.label1.TabIndex = 7;
             this.label1.Text = "Output travel time";
             // 
@@ -131,7 +132,6 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "Feld";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
