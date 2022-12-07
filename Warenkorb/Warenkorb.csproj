@@ -52,6 +52,7 @@
     <Compile Include="Bestellformular.Designer.cs">
       <DependentUpon>Bestellformular.cs</DependentUpon>
     </Compile>
+    <Compile Include="OrderItem.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Warenkorbformular.cs">
@@ -71,7 +72,11 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Warenkorbformular.resx">
+      <DependentUpon>Warenkorbformular.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -84,6 +89,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warenkorb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\160_F_68489642_CJVCVBMPhdwMRZFciRGK1JxWT1C7aaVd.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

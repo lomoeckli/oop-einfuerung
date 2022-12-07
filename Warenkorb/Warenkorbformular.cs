@@ -12,9 +12,26 @@ namespace Warenkorb
 {
     public partial class Warenkorbformular : Form
     {
-        public Warenkorbformular()
+        List<OrderItem> items;
+        public Warenkorbformular(List<OrderItem> orderedItems)
         {
             InitializeComponent();
+
+            this.items = orderedItems;
+            
+        }
+
+        private void Warenkorbformular_Load(object sender, EventArgs e)
+        {
+            foreach (OrderItem item in items)
+            {
+               // muss lîstbox verwenden -> ShowProducts.Items.Add(item.Amount + " Ex." + "\t" + item.ProductName);
+            }
+        }
+
+        private void Exit_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -12,14 +12,37 @@ namespace Warenkorb
 {
     public partial class Bestellformular : Form
     {
+        List<OrderItem> orderedItems = new List<OrderItem>();
+
         public Bestellformular()
         {
             InitializeComponent();
         }
 
-        private void Bestellformular_Load(object sender, EventArgs e)
+        private void AddProduct_Click(object sender, EventArgs e)
         {
+            if (string.IsNullOrEmpty(ProductName.Text.Trim()))
+                return;
 
+            OrderItem item = new OrderItem();
+            item.ProductName = ProductName.Text;
+            item.Amount = Convert.ToInt32(Number.Value);
+            orderedItems.Add(item);
+
+            labelNumberProducts.Text = "(" + orderedItems.Count.ToString() + ")";
+
+            ProductName.Text = "";
+            ProductName.Focus();
+            Number.Value = 1;
         }
+
+
+        private void WarenkorbLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Warenkorbformular w = new Warenkorbformular(this.orderedItems);
+            w.ShowDialog();
+        }
+
+        
     }
 }
