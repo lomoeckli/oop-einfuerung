@@ -149,7 +149,7 @@
             this.Controls.Add(this.WarenkorbLink);
             this.Controls.Add(this.groupBox1);
             this.Name = "Bestellformular";
-            this.Text = "Form1";
+            this.Text = " ";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Number)).EndInit();

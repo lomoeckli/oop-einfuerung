@@ -25,13 +25,25 @@ namespace Warenkorb
         {
             foreach (OrderItem item in items)
             {
-               // muss lîstbox verwenden -> ShowProducts.Items.Add(item.Amount + " Ex." + "\t" + item.ProductName);
+                ShowProducts.Items.Add(item);
             }
         }
 
         private void Exit_Click(object sender, EventArgs e)
         {
+            this.Close();
+        }
 
+        private void ShowProducts_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            OrderItem product = (OrderItem)ShowProducts.SelectedItem;
+
+            Kaufen(product);
+        }
+
+        private void Kaufen(OrderItem item)
+        {
+            MessageBox.Show("Kunde will " + item.ProductName + " jetzt kaufen.");
         }
     }
 }
