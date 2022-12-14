@@ -17,14 +17,11 @@ namespace AutoSimulator
             InitializeComponent();
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void Form1_Load(object sender, EventArgs e)
         {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
+            comboBoxAutos.Items.Add(new Auto("Porsche", 250));
+            comboBoxAutos.Items.Add(new Auto("Opel", 90));
+            comboBoxAutos.Items.Add(new Auto("Ferrari", 370));
         }
     }
 }

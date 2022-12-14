@@ -28,5 +28,6 @@ namespace FlaechenberechnungRechteck
            double area = height * width;
            return area;
         }
+
     }
 }
